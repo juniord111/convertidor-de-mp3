@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Function</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Convertidor de Enlace a MP3</h1>
+        
+        <!-- Formulario para ingresar el enlace -->
+        <form id="convertForm">
+            <input type="url" id="urlInput" placeholder="Pega el enlace aquí" required />
+            <button type="submit">Convertir a MP3</button>
+        </form>
+
+        <!-- Área para mostrar el progreso y enlace de descarga -->
+        <div id="statusMessage" class="hidden"></div>
+        <div id="downloadLink" class="hidden">
+            <p>¡Conversión completada! Puedes descargar el archivo MP3 aquí:</p>
+            <a href="" id="mp3Download" target="_blank">Descargar MP3</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
